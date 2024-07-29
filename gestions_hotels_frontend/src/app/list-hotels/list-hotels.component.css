@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+    background-color: rgba(201, 198, 198, 0.842);
+  }
+  
+  #wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  #sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+    height: 200vh;
+    position: relative;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+  }
+  
+  .sidebar-footer {
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+  
+  .navbar-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  .card .card-body {
+    text-align: center;
+  }
+  .list-group-item{
+    background-color:rgba(52, 51, 51, 0.525);
+    color: white;
+  } 
+  .list-group-item:hover{
+    background-color: rgba(245, 245, 245, 0.534);
+    text-decoration: none;
+  }
+  .list-group-item:focus{
+    background-color: rgba(245, 245, 245, 0.534);
+    text-decoration: none;
+  }
+  span{
+    background-color: #ffff;
+    width: 300vh;
+    margin-left: 0px;
+  }
+  
+  

@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+
+}
+.label{
+    color: gray;
+}
+.input{
+    border-radius: 10px;
+}
+form{
+    width: 100vh;
+    padding: 30px;
+}
+.card-title{
+    display: flex;
+    color: gray;
+    text-transform: uppercase;
+    padding: 30px;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vh;
+    height: 10vh;
+    border: gray 1px solid;
+
+    border-radius: 10px;
+}
+.inputFile{
+    height: 100px;
+}

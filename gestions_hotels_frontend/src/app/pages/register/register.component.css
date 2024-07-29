@@ -1,0 +1,32 @@
+#yourEmail{
+    border-left: none;
+    border-right: none;
+}
+#yourName{
+    border-left: none;
+    border-right: none;
+}
+#yourPassword{
+    border-left: none;
+    border-right: none;
+}
+.body{
+    background-color: gray;
+}
+p{
+    font-size: 18px;
+    color: white;
+
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+span{
+    font-size: 20px;
+
+    margin: 5%;
+}

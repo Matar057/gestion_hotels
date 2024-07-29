@@ -1,0 +1,75 @@
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-white d-flex">
+        <img src="assets/images/Vector (1).png" class="img mt-4 ml-4" alt="" />
+        <img src="assets/images/Vector.png" class="img mt-4" alt="" />
+        <h5 class="m-4">RED PRODUCT</h5>
+      </div>
+      <div class="list-group list-group-flush">
+        <a routerLink="/dashboard" class="list-group-item">
+          <img src="assets/images/Vector (2).png" class="" alt="" />
+          Dashboard</a
+        >
+        <a routerLink="/liste-hotels" class="list-group-item">
+          <img src="assets/images/Vector (3).png" alt="" />
+          Liste des Hôtels
+        </a>
+      </div>
+    </div>
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <h2 class="mb-0" style="margin-left: 1rem;">Dashboard</h2>
+
+        <form style="margin-left: 38rem" class="form-inline my-2 my-lg-1 ml-">
+          <input class="form-control border rounded-pill" type="search" placeholder="Recherche" aria-label="Recherche">
+        </form>
+        <div class="navbar-icons ml-3">
+            <i class="fa-solid fa-bell" style="margin-left: 1rem;"></i>
+          <img src="assets/images/a0.jpg.png" alt="User" class="mx-2">
+          <i class="bi bi-box-arrow-right"></i>
+          <a routerLink="/login"> <i class="fa-solid fa-arrow-right-from-bracket text-dark" title="Quitter"></i></a>
+        </div>
+      </nav>
+      <div class="row col-md-12 bg-white ml-0">
+        <span class="col col-md-6 m-1">
+          <h2 style="margin-left: 1rem;">Hôtels <strong class="text-muted mb-0">8</strong>
+            <a routerLink="/add-hotel">
+              <img src="assets/images/Frame 537.png" style="margin-left: 41.5rem; margin-top: 1rem;" alt="Créer un nouveau hôtel" />
+            </a>
+          </h2>
+        </span>
+      </div>
+      <div class="row row-cols-1 row-cols-md-8">
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-md-2 g-4 m-4" *ngFor="let hotel of hotels">
+              <div class="card h-90">
+                <img [src]="hotel.image" class="card-img-top" alt="Image de l'hôtel" />
+
+                <div class="card-body" style="text-align: left;">
+                  <p class="card-text text-danger">{{ hotel.addresse }}</p>
+                  <h3 class="card-title">{{ hotel.hotelName }}</h3>
+                  <p class="card-text">
+                    {{ hotel.prix }} {{ hotel.currency }} par nuit
+                  </p>
+                  <!-- Actions verticales sous chaque image d'hôtel -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>

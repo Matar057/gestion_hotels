@@ -1,0 +1,43 @@
+<div class="container">
+  <form [formGroup]="hotelForm" (ngSubmit)="onSubmit()" class="row g-3 bg-light">
+    <h3 class="col-md-8"> <a routerLink="/liste-hotels">
+      <i class="fa-solid fa-arrow-left text-dark" title="Retour"></i>
+    </a> Créer un nouveau hôtel
+    </h3>
+    <div class="col-md-6">
+      <label for="hotelName" class="form-label">Nom de l'hôtel</label>
+      <input type="text" formControlName="hotelName" class="form-control input" id="hotelName" required>
+    </div>
+    <div class="col-md-6">
+      <label for="address" class="form-label">Adresse</label>
+      <input type="text" formControlName="addresse" class="form-control input" id="address" required>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" formControlName="email" class="form-control input" id="email" required>
+    </div>
+    <div class="col-md-6">
+      <label for="telephone" class="form-label">Numéro de Téléphone</label>
+      <input type="tel" formControlName="telephone" class="form-control input" id="telephone" required>
+    </div>
+    <div class="col-md-6">
+      <label for="prix" class="form-label">Prix par nuit</label>
+      <input type="number" formControlName="prix" class="form-control input" id="prix" required>
+    </div>
+    <div class="col-md-6">
+      <label for="currency" class="form-label">Devise</label>
+      <select formControlName="currency" class="form-control input" id="currency">
+        <option value="XOF">XOF</option>
+        <option value="£">Euro</option>
+        <option value="$">Dollar</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <label for="image" class="form-label">Ajouter une photo</label>
+      <input type="file" formControlName="image" class="form-control inputFile" id="image">
+    </div>
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-secondary">Enregistrer</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="dashboard.component.css" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-white d-flex">
+                <img src="assets/images/Vector (1).png" class="img mt-4 ml-4" alt="">
+                <img src="assets/images/Vector.png" class="img mt-4 " alt="">
+                <h5 class="m-4">RED PRODUCT</h5>
+            </div>
+            <div class="list-group list-group-flush">
+
+                <a routerLink="/dashboard" class="list-group-item">
+                    <img src="assets/images/Vector (2).png" class="" alt="">
+                    Dashboard</a>
+                <a routerLink="/liste-hotels" class="list-group-item">
+                    <img src="assets/images/Vector (3).png" alt="">
+                    Liste des Hôtels
+                </a>
+            </div>
+            <!-- <div class="sidebar-footer text-center text-white mt-auto p-3">
+                <img src="assets/images/a0.jpg.png" alt="User Image" class="rounded-circle mb-2" width="50" />
+                <div>Mouhamat Badiane</div>
+                <small class="text-success">En ligne</small>
+            </div> -->
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+               <h2 class="mb-0" style="margin-right: rem;">Dashboard</h2>
+              <form style="margin-left: 38rem" class="form-inline my-2 my-lg-1 ml-">
+                <input class="form-control border rounded-pill" type="search" placeholder="Recherche" aria-label="Recherche">
+              </form>
+              <div class="navbar-icons ml-3">
+                 <i class="bi bi-bell-fill"></i>
+
+                <img src="assets/images/a0.jpg.png" alt="User" class="mx-2">
+                <a routerLink="/login"> <i class="fa-solid fa-arrow-right-from-bracket text-dark" title="Quitter"></i></a>
+              </div>
+              </nav>
+            <div class="row col-md-12">
+                <span>
+                    <H2>Bien venu sur Red Product</H2>
+                    <p>lorem ipsum dolor amet consecteur</p>
+                </span>
+            </div>
+            <div class="row col-md-12 mt-4">
+                <div class="card col-md-3 m-4">
+                    <div class="card-body  d-flex">
+                        <div class="card-title mt-3">
+                            <img src="assets/images/span.w-48.png" alt="">
+                        </div>
+                        <div class="card-text mt-3 ml-3" style="text-align: left;">
+                           <strong>125 <span class="text-muted">Formulaire</span></strong>
+                            <p class="text-muted mb-0"> Je sais pas quoi mettre</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-3 m-4">
+                  <div class="card-body d-flex">
+                    <div class="card-title mt-3">
+                        <img src="assets/images/span.w-48 (1).png" alt="">
+                    </div>
+                    <div class="card-text mt-3 ml-3" style="text-align: left;">
+                       <strong>40 <span class="text-muted">Messages</span></strong>
+                        <p class="text-muted mb-0"> Je sais pas quoi mettre</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-md-3 m-4">
+                    <div class="card-body d-flex">
+                        <div class="card-title mt-3">
+                            <img src="assets/images/span.w-48 (2).png" alt="">
+                        </div>
+                       <div class="card-text mt-3 ml-3" style="text-align: left;">
+                        <strong>600 <span class="text-muted">Utilisateurs</span></strong>
+                        <p class="text-muted mb-0">Je sais pas quoi mettre</p>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+             <div class="row col-md-12 ">
+                <div class="card col-md-3 m-4">
+                    <div class="card-body d-flex">
+                        <div class="card-title mt-3">
+                            <img src="assets/images/span.w-48 (3).png" alt="">
+                        </div>
+                        <div class="card-text mt-3 ml-3" style="text-align: left;">
+                            <strong>25 <span class="text-muted">Emails</span></strong>
+                            <p class="text-muted mb-0">Je sais pas quoi mettre</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card col-md-3 m-4 no-rounded">
+                    <div class="card-body d-flex ">
+                        <div class="card-title mt-3">
+
+                            <img src="assets/images/span.w-48 (4).png" alt="">
+
+                        </div>
+                        <div class="card-text mt-3 ml-3" style="text-align: left;">
+                            <strong>40 <span class="text-muted">Hôtels</span></strong>
+                            <p class="text-muted mb-0">Je sais pas quoi mettre</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card col-md-3 m-4 no-rounded">
+                    <div class="card-body d-flex">
+                        <div class="card-title mt-3 ">
+
+                            <img src="assets/images/span.w-48 (5).png" alt="">
+                        </div>
+                        <div class="card-text ml-3 mt-3" style="text-align: left;">
+                            <strong>02 <span class="text-muted">Entités</span></strong>
+                            <p class="text-muted mb-0">Je sais pas quoi mettre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>
